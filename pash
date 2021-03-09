@@ -86,7 +86,7 @@ pw_copy() {
         $PASH_CLIP </dev/null
     } &
 
-    pw_show "$1" | $PASH_CLIP
+    pw_show "$1" | head -n 1 | $PASH_CLIP
 }
 
 pw_list() {
